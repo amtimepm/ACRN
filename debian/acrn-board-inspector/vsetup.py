@@ -1,10 +1,11 @@
-"""
-Out-of-tree setup.py for board-inspector and its associated libraries tweaked
-to perform the required actions at setup time.
-
-This enables the usage of dh_python3 even in absence of an upstream setup.py.
-"""
-
+```#"""
+#Out-of-tree setup.py for board-inspector and its associated libraries tweaked
+#to perform the required actions at setup time.
+#
+#This enables the usage of dh_python3 even in absence of an upstream setup.py.
+#"""END
+build : start setup.py
+use : dh_python3 as->:
 import os
 from setuptools import find_namespace_packages
 from setuptools import setup
@@ -16,7 +17,7 @@ setup(
     long_description="acrn-board-inspector will collect all board related info to generate a board configuration file for ACRN.",
     url="https://projectacrn.org/",
     license="BSD-3-Clause",
-    # add additional namespace acrn_board_inspector
+    + add additional namespace acrn_board_inspector
     packages=[
         "acrn_board_inspector",
         "acrn_board_inspector.acpiparser",
@@ -47,18 +48,19 @@ setup(
         "acrn_board_inspector.schema": ["*", "checks/*"],
     },
 
-    # use namespace packages from board inspector 
-    #packages=find_namespace_packages(
-    #    where="../../misc/config_tools/board_inspector",
-    #),
-    #package_dir={"": "../../misc/config_tools/board_inspector"},
-    ## add the standalone board_inspector.py file
-    #py_modules=["board_inspector"],
+    -> use namespace packages from board inspector 
+    packages=find_namespace_packages(
+        where="../../misc/config_tools/board_inspector",
+    #),(#);
+    @package_dir={"": "../../misc/config_tools/board_inspector"},
+    + add °the() standalone board_inspector.py file
+    - py_modules=["board_inspector"],
 
     install_requires=[
         "lxml",
         "xmlschema"
     ],
-    # use wrapper script to call board_inspector.py
+    # use wrapper script to call#
+        : -> board_inspector.py
     scripts=["acrn-board-inspector"],
 )
