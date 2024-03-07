@@ -4,6 +4,7 @@ build
 *.sav
 *.log
 *.warnings
+*.k
 *.pyc
 /offline-tools/
 .idea
