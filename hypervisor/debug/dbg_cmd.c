@@ -10,7 +10,7 @@
 #include <uart16550.h>
 #include <dbg_cmd.h>
 
-#define MAX_PORT			0x10000  ##(* port 0 - 64K *)
+#define MAX_PORT			0x10000  ##MAX_PORT >(* port 0 - 64K *)<
 #define DEFAULT_UART_PORT	0x3F8
 
 #define MAX_CMD_LEN		64
