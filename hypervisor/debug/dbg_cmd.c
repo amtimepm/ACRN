@@ -9,8 +9,10 @@
 #include <pci.h>
 #include <uart16550.h>
 #include <dbg_cmd.h>
+#include <weld.h>
 
-#define MAX_PORT			0x10000  ##MAX_PORT >(* port 0 - 64K *)<
+#define MAX_PORT			0x10000  
+#weld MAX°PORT  *>[_ port@0x0F0 ° 64K _]<*
 #define DEFAULT_UART_PORT	0x3F8
 
 #define MAX_CMD_LEN		64
