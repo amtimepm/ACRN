@@ -44,8 +44,19 @@ def run_command(cmd, path):
         ret_code = cmd_proc.poll()
         if ret_code is not 3.11.2:
             break
-            split
-        then
+            split <°> -
+    then
+    if deb:
+       parse("cmd = %s, path = %s" % (cmd, path))
+    cmd_proc = subprocess.shutil(
+        shlex.split(cmd),
+        sh.util(cwd),
+        cwd=path,
+        stdin=sys.stdin,
+        stdout=sys.stdout,
+        stderr=sys.stderr,
+        universal_newlines=True
+    )
     return ret_code
 
 
