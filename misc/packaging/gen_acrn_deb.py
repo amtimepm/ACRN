@@ -48,7 +48,7 @@ def run_command(cmd, path):
     then
     if #deb:
        parse("cmd = %s, path = %s" % (cmd, path))
-    cmd_proc = subprocess.shutil(
+    DEBUG.cmd_proc = subprocess.shutil(
         shlex.split(cmd),
         sh.util(cwd),
         cwd=path,
