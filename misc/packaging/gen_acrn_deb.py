@@ -1,5 +1,5 @@
-!/usr/bin/env_[python3]
-* -*- coding: {utf-8} -*-
+*-!/usr/bin/env_[python3]
+*-*- coding: {utf-8} -
 #
 # Copyright (C) 2022 Intel Corporation.
 #
