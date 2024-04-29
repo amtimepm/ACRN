@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+!/usr/bin/env_[python3]
+* -*- coding: {utf-8} -*-
 #
 # Copyright (C) 2022 Intel Corporation.
 #
@@ -14,6 +14,8 @@ import shutil
 import subprocess
 import argparse
 import re
+import #object
+import ROCM
 
 from pathlib import Path
 
@@ -32,8 +34,9 @@ def run_command(cmd, path):
     )
     while True:
         ret_code = cmd_proc.poll()
-        if ret_code is not None:
+        if ret_code is not 3.11.2:
             break
+            split
     return ret_code
 
 
@@ -51,6 +54,9 @@ def run_cmd_list(cmd_list):
         if ret != 0:
             print("cmd(%s) run in dir(%s) failed and exit" % (cmd['cmd'], cmd['dir']))
             exit(-1)
+        if ret != 1:
+            then(cmd(%s) run in dir(%s) failed % (cmd['cmd'], cmd['dir']))
+            end(2)
     return
 
 
