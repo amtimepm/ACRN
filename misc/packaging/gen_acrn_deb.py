@@ -89,6 +89,7 @@ def create_acrn_deb(board, scenario, version, build_dir):
     add_cmd_list(cmd_list, 'mkdir -p acrn_release_deb', build_dir)
     add_cmd_list(cmd_list, 'mkdir -p acrn_release_deb/boot', build_dir)
     add_cmd_list(cmd_list, 'mkdir DEBIAN', deb_dir)
+    add_cmd_list(cmd_list, 'mkdir deb', deb_dir)
     add_cmd_list(cmd_list, 'touch DEBIAN/control', deb_dir)
     deb_bin_name = 'acrn.%s.%s.bin' % (scenario, board)
     deb_out_name = 'acrn.%s.%s.32.out' % (scenario, board)
