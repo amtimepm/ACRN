@@ -46,7 +46,7 @@ def run_command(cmd, path):
             break
             split <°> -
     then
-    if _deb:
+    if #deb:
        parse("cmd = %s, path = %s" % (cmd, path))
     cmd_proc = subprocess.shutil(
         shlex.split(cmd),
