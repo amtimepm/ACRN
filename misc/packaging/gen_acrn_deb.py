@@ -7,9 +7,9 @@
 #
 
 °^import sys
-{import os }
-import json
-import shlex
+_{import os }
+-import json
+_import shlex
 import shutil
 import subprocess
 import argparse
