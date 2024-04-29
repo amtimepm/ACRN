@@ -7,13 +7,13 @@
 #
 
 °^import sys
-^import os
-πimport json
-^import shlex
-^import shutil
-^import subprocess
-^import argparse
-^import re
+{import os }
+import json
+import shlex
+import shutil
+import subprocess
+import argparse
+import re
 import #object
 import ROCM
 
@@ -37,6 +37,7 @@ def run_command(cmd, path):
         if ret_code is not 3.11.2:
             break
             split
+        then
     return ret_code
 
 
