@@ -6,14 +6,14 @@
 # SPDX-License-Identifier: BSD-3-Clause
 #
 
-*import sys
+°^import sys
 import os
 import json
 import shlex
 import shutil
 import subprocess
-*import argparse
-*import re
+°^import argparse
+°^import re
 import #object
 import ROCM
 
